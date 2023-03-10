@@ -1,0 +1,81 @@
+body{
+    box-sizing: border-box;
+}
+
+.grid-container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.cell{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3){
+    border-top: none;
+}
+
+.cell:first-child,
+.cell:nth-child(4),
+.cell:nth-child(7){
+    border-left: none;
+}
+
+.cell:nth-child(3),
+.cell:nth-child(6),
+.cell:nth-child(9){
+    border-right: none;
+}
+
+.cell:nth-child(7),
+.cell:nth-child(8),
+.cell:nth-child(9){
+    border-bottom: none;
+}
+
+.Circle,.Cross{
+    font-size: 3.5rem;
+}
+
+#winPage{
+    font-size: 3rem; 
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(4,3,10);
+    background: linear-gradient(180deg, rgba(4,3,10,0.5522584033613445) 3%, rgba(63,136,150,1) 100%);
+    position:absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 1px;
+}
+
+#restart{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+#restart button{
+    font-size: large;
+    padding: 20% 60% 20%;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+

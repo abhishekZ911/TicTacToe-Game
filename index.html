@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-container" id="container">
+            <div class="cell unselected item1"></div>
+            <div class="cell unselected item2"></div>
+            <div class="cell unselected item3"></div>
+            <div class="cell unselected item4"></div>
+            <div class="cell unselected item5"></div>
+            <div class="cell unselected item6"></div>
+            <div class="cell unselected item7"></div>
+            <div class="cell unselected item8"></div>
+            <div class="cell unselected item9"></div>
+    </div>
+    
+    <div id="winPage">
+        <div id="winner">The winner is : <span id="winner-name"></span> </div>
+        <div id="restart">
+            <button  id="restartbtn" onclick="window.location.reload()">Restart</button>
+        </div>
+
+    </div>
+</body>
+<script src="script.js" defer></script>
+</html>
